@@ -1,0 +1,208 @@
+  /*------------------------------------*\
+    #GENERAL
+  \*------------------------------------*/
+
+  @font-face {
+  font-family: gbb;
+  src: url(gbb__.ttf);
+  }
+
+  html {
+    font-family: gbb;
+    font-size: 35px;
+    line-height: 150%;
+    background-image: url('imgs/background.gif');
+    background-size: contain;
+  }
+
+  .big-font {
+    font-size: 50px;
+  }
+
+  .shadow-box-bottom {
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
+  }
+
+  .content-padding {
+    padding: 15px;
+  }
+
+  .icon-css {
+    margin-top: 25px;
+    width: 100px;
+  }
+
+  .top-icon-css {
+    width: 100px;
+  }
+
+  .no-margin {
+    margin: 0;
+  }
+
+  .social-links {
+    width: 100px;
+    margin-top: 60px;
+    margin-left: 80px;
+  }
+
+  /*------------------------------------*\
+    #HEADER
+  \*------------------------------------*/
+
+  header {
+    margin-bottom: -50px;
+  }
+
+  #character-gif {
+    width: 350px;
+    margin-top: -70px;
+    display: inline-block;
+  }
+
+  #header-title {
+    position: relative;
+    bottom: 80px;
+    color: white;
+    display: inline-block;
+    font-size: 100px;
+  }
+
+  #coin-gif {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+
+  /*------------------------------------*\
+    #MAIN-CONTAINER
+  \*------------------------------------*/
+
+  main {
+
+  }
+
+  .section_8bit{
+  margin-left: 10%;
+  width: 80%;
+  float: left;
+  background-color: #008200;
+  border-left: 10px solid #233b47;
+  border-right: 10px solid #233b47;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+  .section_8bit .wrapper{
+  display: block;
+  color: white;
+  margin: -10px 0;
+  border-top: 10px solid #233b47;
+  border-bottom: 10px solid #233b47;
+  }
+
+  .section_8bit::before,
+  .section_8bit::after,
+  .section_8bit .wrapper::before,
+  .section_8bit .wrapper::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    background: #233b47;
+  }
+  .section_8bit::before{ top: -5px; left: -5px; }
+  .section_8bit::after{ top: -5px; right: -5px; }
+  .section_8bit .wrapper::before{ bottom: -5px; left: -5px; }
+  .section_8bit .wrapper::after{ bottom: -5px; right: -5px; }
+
+  #info-header {
+    border-bottom: 5px solid #006900;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,1);
+    padding: 40px;
+    padding-left: 0;
+    padding-bottom: 5px;
+    margin-top: 0;
+  }
+
+  #info-title {
+    position: relative;
+    font-style: normal;
+    bottom: 20px;
+  }
+
+  #codex {
+    padding: 15px;
+    border-bottom: 5px solid #009c00;
+  }
+
+  #info-box {
+    padding: 25px;
+    background-color: black;
+    height: 450px;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .icons-div {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .icon-box {
+    text-align: center;
+    background-color: black;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: -40px;
+  }
+
+  .btn {
+    float: right;
+    margin-right: 20px;
+    margin-top: -20px;
+
+  	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(219,87,5,1);
+    padding: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+  	width: 260px;
+    height: 100px;
+  	text-align: center;
+  	-webkit-transition: all .1s ease;
+  	-moz-transition: all .1s ease;
+  	-ms-transition: all .1s ease;
+  	-o-transition: all .1s ease;
+  	transition: all .1s ease;
+  }
+
+  .btn:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+  }
+
+  .active, .icon-box:hover {
+  border: 5px solid white;
+}
